@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f6fc;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.05), 0 6px 10px 0 rgba(0,0,0,0.10);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 30% 0 30%;
+    padding: 1rem 0 1rem 0;
+    border-radius: 0 0 15px 15px;
+    background-color:#4a8cc7;
+}
+
+.espaco-para-sorteio {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    margin: 0 0 0 30%;
+    background-color: #c7d7ed;
+}
+
+#mostra-numeros {
+    font-family: 'Pangolin', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#cabecalho {
+    background-color: #4a8cc7;
+    border-radius: 15px 15px 0 0;
+    width: 40%;
+    height: 4em;
+    display: flex;
+    margin: 5rem 0 0 30%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#cabecalho > a {
+    font-family: 'Pangolin', cursive;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(253, 251, 249);
+}
+
+#raffle-button {
+    background-color: #63ffa4;
+    font-weight: 600;
+}
+
+#reset-button {
+    background-color: #ff9da2;
+    font-weight: 600;
+}
+
+
+/* media queries */
+
+@media (max-width: 900px) {
+    #cabecalho {
+        margin: 5rem 0 0 10%;
+        width: 80%;
+    }
+    .espaco-para-sorteio {
+        margin: 0 0 0 10%;
+        width: 80%;
+        height: 8rem;
+    }
+    .buttons {
+        margin: 0 10% 0 10%;
+    }
+    #mostra-numeros {
+        font-size: 1.6rem;
+    }
+  }
