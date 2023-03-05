@@ -23,6 +23,7 @@ button {
 
 button:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.05), 0 6px 10px 0 rgba(0,0,0,0.10);
+    cursor: pointer;
 }
 
 .buttons {
