@@ -1,6 +1,6 @@
 // Código relacionado ao sorteio
 
-// sorteia números
+// função para gerar números aleatórios em determinado intervalo
 function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -12,14 +12,17 @@ function checarNumeroDuplicado(arr, el) {
     return arr.includes(el) === false;
 }
 
-let numerosSorteados = [];
-let quantidadeDeNumeros = 0;
-
-// repete sorteio e insere números na lista
-while (quantidadeDeNumeros < 6) {
-    var numero = getRandomIntInclusive(1, 60);
-    if (checarNumeroDuplicado(numerosSorteados, numero)) {
-        numerosSorteados.push(numero);
+export function sorteiaNumeros () {
+    let numerosSorteados = [];
+    let quantidadeDeNumeros = 0;
+    
+    // repete sorteio e insere números na lista
+    while (quantidadeDeNumeros < 6) {
+        var numero = getRandomIntInclusive(1, 60);
+        if (checarNumeroDuplicado(numerosSorteados, numero)) {
+            numerosSorteados.push(numero);
+            quantidadeDeNumeros++;
+        }
     }
-    quantidadeDeNumeros++;
+    return numerosSorteados;
 }

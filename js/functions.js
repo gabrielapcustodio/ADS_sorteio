@@ -1,3 +1,4 @@
+import { sorteiaNumeros } from '/sorteio.js'
 // HTML e CSS
 
 // define e inicializa variáveis relacionadas aos botões
@@ -10,7 +11,7 @@ let mostraNumeros = document.getElementById('mostra-numeros');
 
 
 sortear.addEventListener("click", function() {
-    mostraNumeros.innerHTML = numerosSorteados;
+    mostraNumeros.innerHTML = sorteiaNumeros();
 });
 
 // atualiza a página
