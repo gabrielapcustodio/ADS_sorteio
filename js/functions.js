@@ -1,4 +1,4 @@
-import { sorteiaNumeros } from '/sorteio.js'
+import { sorteiaNumeros } from '/js/sorteio.js'
 // HTML e CSS
 
 // define e inicializa variáveis relacionadas aos botões
